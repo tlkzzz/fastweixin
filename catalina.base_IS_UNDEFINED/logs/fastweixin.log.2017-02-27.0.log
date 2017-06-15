@@ -1,0 +1,65 @@
+2017-02-27 10:37:32.427 [main] DEBUG c.github.sd4324530.fastweixin.api.config.ApiConfig - 开始第一次初始化access_token........
+2017-02-27 10:37:32.453 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求地址:https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxd26b23a0c2ff805f&secret=ff87a518abdcca79317453dd10d53c3a-----------------
+2017-02-27 10:37:33.657 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 本次请求'token?grant_type=client_credential&appid=wxd26b23a0c2ff805f&secret=ff87a518abdcca79317453dd10d53c3a'耗时:670ms
+2017-02-27 10:37:33.662 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求成功-----------------
+2017-02-27 10:37:33.662 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 响应结果:
+2017-02-27 10:37:33.663 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - {"access_token":"pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF","expires_in":7200}
+2017-02-27 10:37:33.848 [main] DEBUG c.github.sd4324530.fastweixin.api.config.ApiConfig - 获取access_token:pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF
+2017-02-27 10:37:33.858 [main] DEBUG com.github.sd4324530.fastweixin.api.MenuAPI - 删除菜单.....
+2017-02-27 10:37:33.859 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求地址:https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF-----------------
+2017-02-27 10:37:34.024 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 本次请求'delete?access_token=pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF'耗时:157ms
+2017-02-27 10:37:34.025 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求成功-----------------
+2017-02-27 10:37:34.025 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 响应结果:
+2017-02-27 10:37:34.025 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - {"errcode":0,"errmsg":"ok"}
+2017-02-27 10:37:34.059 [main] DEBUG com.github.sd4324530.fastweixin.FastweixinTest - {
+	"button":[
+		{
+			"key":"main1",
+			"name":"测试fangli",
+			"sub_button":[
+				{
+					"key":"sub1",
+					"name":"授权",
+					"type":"view",
+					"url":"https://open.weixin.qq.com/connect/qrconnect?appid=wx8ecfa5e99a8cb466&redirect_uri=http%3a%2f%2fcfpc.vixuan.com%2fvixuan-front%2fthirdlogin%2fweixinUserInfo&response_type=code&scope=snsapi_login"
+				},
+				{
+					"key":"sub2",
+					"name":"点击",
+					"type":"click"
+				}
+			],
+			"type":"click"
+		}
+	]
+}
+2017-02-27 10:37:34.059 [main] DEBUG com.github.sd4324530.fastweixin.api.MenuAPI - 创建菜单.....
+2017-02-27 10:37:34.061 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求地址:https://api.weixin.qq.com/cgi-bin/menu/create?access_token=pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF-----------------
+2017-02-27 10:37:34.065 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 请求入参:
+2017-02-27 10:37:34.065 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - {
+	"button":[
+		{
+			"key":"main1",
+			"name":"测试fangli",
+			"sub_button":[
+				{
+					"key":"sub1",
+					"name":"授权",
+					"type":"view",
+					"url":"https://open.weixin.qq.com/connect/qrconnect?appid=wx8ecfa5e99a8cb466&redirect_uri=http%3a%2f%2fcfpc.vixuan.com%2fvixuan-front%2fthirdlogin%2fweixinUserInfo&response_type=code&scope=snsapi_login"
+				},
+				{
+					"key":"sub2",
+					"name":"点击",
+					"type":"click"
+				}
+			],
+			"type":"click"
+		}
+	]
+}
+2017-02-27 10:37:34.409 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 本次请求'create?access_token=pF-Xu3AHJM-18TfnHa2b5TovsGQOKGe6rcXv-0o4TvS50YDOsLTZDgFGypft2QV0tXwA4bkYWkNDC20f3GHNu8boKfOCOxRiRnLWe80CapNim-xYJ0q5x6Q2EocikNH3LQVaADAVAF'耗时:341ms
+2017-02-27 10:37:34.409 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - -----------------请求成功-----------------
+2017-02-27 10:37:34.409 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - 响应结果:
+2017-02-27 10:37:34.409 [main] DEBUG com.github.sd4324530.fastweixin.util.NetWorkCenter - {"errcode":0,"errmsg":"ok"}
+2017-02-27 10:37:34.410 [main] DEBUG com.github.sd4324530.fastweixin.FastweixinTest - ResultType{code=0, description='请求成功'}
